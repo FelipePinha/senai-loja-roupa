@@ -1,0 +1,45 @@
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.calca {
+    width: 400px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img-container img{
+    width: 100%;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-txt-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#btn-agendamento {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.card-title{
+    padding-left: 80px;
+}
+.card-text{
+    padding-left: 80px;
+}

@@ -1,0 +1,254 @@
+@import url('reset.css');
+
+.icon {
+    width: 15px;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.banner img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* destaques */
+
+.destaques {
+    padding: 50px;
+    text-align: center;
+}
+
+.destaques-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.destaque {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+}
+
+.destaque::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease-in-out;
+}
+
+.destaque:hover::before {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.destaque:hover p {
+    color: #fff;
+    opacity: 1;
+}
+
+.destaque p {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.destaque#calcas {
+    background: url('../imagens/background/calcas.avif') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.destaque#oculos {
+    background: url('../imagens/background/oculos.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.destaque#vestidos {
+    background: url('../imagens/background/dress.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* NEW ARRIVALS */
+
+.new-arrivals {
+    padding: 50px;
+    text-align: center;
+}
+
+.new-arrivals h2 {
+    margin-bottom: 50px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.produto img {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.produto span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f4abe2;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.produto .produto-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto .produto-body p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.produto .produto-body a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    background-color: #f4abe2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color .5s ease-in-out;
+}
+
+.produto .produto-body a:hover {
+    background-color: #cc2f85;
+}
+
+/* form */
+
+.form-container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form-container form {
+    width: 100%;
+}
+
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: #f4abe2;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-item h3 {
+    font-size: 16px;
+}
+
+.footer-item ul {
+    list-style: none;
+}
+
+.footer-item:first-child ul{
+    margin-right: 14px;
+}
+
+.footer-item:last-child ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+/* Responsivo */
+
+@media(max-width: 768px) {
+    .destaques-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width: 510px) {
+    .footer-item:nth-child(2) {
+        width: 100%;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px) {
+    .destaques-container {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque {
+        height: 240px;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        margin-top: 50px;
+    }
+}
