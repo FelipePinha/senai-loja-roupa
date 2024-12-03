@@ -1,0 +1,41 @@
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+}
+
+.moleton{
+    padding-left: 164px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-txt-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#btn-agendamento {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.flex-button button{
+    padding: 5px;
+}
