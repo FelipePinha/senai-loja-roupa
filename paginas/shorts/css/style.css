@@ -1,0 +1,103 @@
+.b-s {
+    margin-top: 100px;
+}
+
+.card1{
+    margin-top: 3%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 30px;
+    padding-bottom: 25px;
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+    width: 18rem; 
+    height: 25rem;
+}
+
+.card span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #F2ACA4;
+    width: 40px;
+
+}
+
+.card-body{
+    text-align: center;
+}
+
+.button2{
+    background-color: #F4ABE2 ;
+    width: 200PX;
+    height: 40PX;
+}
+
+.carrinho{
+    width: 25px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.titulo{
+   margin-bottom: 800px;
+    height: 100px;
+}
+
+h1{
+
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(247, 218, 237);
+  text-shadow:  #F2ACA4;
+  font-size: 300%;
+  background-color:#F4ABE2;
+ 
+}
+.b-s{
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(10, 12, 10);
+    background-color:#F4ABE2;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   
+}
+.container{
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+.desc{
+    padding-top: 300px;
+    padding-right:70px;
+}
+
+.new {
+    margin-right: 3px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 5px;;
+}
+
+@media screen and (max-width: 1000px) {
+    /*Alterar nome das classes abaixo de acordo com o nome da classe que você colocou o display grid (emoji de joinha)*/
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    /*Mesma coisa aqui, alterar nome das bla bla bla...*/
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
