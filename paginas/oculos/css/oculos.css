@@ -1,0 +1,79 @@
+.oculos {
+    width: 100px; 
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-txt-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+
+#btn-agendamento {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: #f4abe2;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-item h3 {
+    font-size: 16px;
+}
+
+.footer-item ul {
+    list-style: none;
+}
+
+.footer-item:first-child ul{
+    margin-right: 14px;
+}
+
+.footer-item:last-child ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 15px;
+}
